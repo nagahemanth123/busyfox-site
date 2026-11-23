@@ -98,6 +98,7 @@ button{ cursor:pointer; -webkit-tap-highlight-color:transparent; }
 @keyframes foxIn{ from{ opacity:0; transform:scale(.985); } to{ opacity:1; transform:none; } }
 .quip{ position:absolute; left:50%; top:100%; margin-top:4px; width:240px; margin-left:-120px; text-align:center; font-size:14px; color:var(--mute); letter-spacing:-.01em; pointer-events:none; }
 .quip span{ display:inline-block; }
+.quip{ display:none !important; }
 .js .quip span{ animation:up .9s var(--ease) 1s both; }
 @media (min-width:900px){
   .quip{ left:100%; top:20%; margin:0 0 0 6px; width:auto; white-space:nowrap; text-align:left; display:flex; align-items:center; gap:10px; }
