@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Busy Fox · Thinking Fast. Building Brands.</title>
+<meta name="description" content="Busy Fox is a marketing agency in Kadapa that also builds its own software. Brands, ads, reels and websites.">
+<link rel="canonical" href="https://busyfox.in/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Busy Fox">
+<meta property="og:title" content="Busy Fox · Thinking Fast. Building Brands.">
+<meta property="og:description" content="Busy Fox is a marketing agency in Kadapa that also builds its own software. Brands, ads, reels and websites.">
+<meta property="og:url" content="https://busyfox.in/">
+<meta property="og:image" content="https://busyfox.in/assets/fox300.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/fox300.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/geist-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/fox-mark.png">
+<script>
+(function(){
+  var r = document.documentElement, pref = null;
+  try { pref = localStorage.getItem('bf-motion'); } catch(e){}
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = pref ? pref === 'off' : reduce;
+  var sda = !still && window.CSS && CSS.supports && CSS.supports('animation-timeline: view()');
+  r.className = 'js' + (still ? ' still' : '') + (sda ? ' sda' : '');
+})();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="home">
+
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="index.html#top" aria-label="Busy Fox, home">
+      <span class="brand-slot" id="markSlot"><img id="mark" src="assets/fox-mark.png" alt="" width="467" height="680"></span>
+      <span class="brand-word" id="brandWord">Busy Fox</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="services.html">Services</a><a href="index.html#clients">Who we work with</a><a href="foxcut.html">FoxCut</a><a href="company.html">Company</a><a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="head-cta">
+      <a class="pill sm mag" href="mailto:admin@busyfox.in?subject=New%20project"><span>Start a project</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="prog" id="prog" aria-hidden="true"></div>
+</header>
+<nav class="sheet" id="sheet" aria-label="Menu">
+  <a href="services.html">Services</a><a href="index.html#clients">Who we work with</a><a href="foxcut.html">FoxCut</a><a href="company.html">Company</a><a href="insights.html">Insights</a><a href="index.html#contact">Contact</a>
+</nav>
+<div class="cur" id="cur" aria-hidden="true"><i>Open</i></div>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="fox-slot" id="foxSlot">
+    <div class="fox-y"><div class="fox-fly" id="foxFly">
+      <div class="fox-tilt" id="foxTilt">
+        <div class="fox-hop" id="foxHop" role="button" tabindex="0" aria-label="Busy Fox logo. Press it to say hello.">
+          <svg class="fox-line" viewBox="0 0 467 680" aria-hidden="true"><g transform="translate(0,680) scale(0.1,-0.1)"><path pathLength="1" d="M2045 6734 c-698 -618 -1168 -1557 -1202 -2399 -13 -340 52 -663 192 -950 61 -124 168 -295 191 -302 5 -2 49 45 96 105 236 297 471 445 791 497 98 16 257 20 257 7 0 -4 -30 -23 -67 -41 -370 -182 -587 -471 -633 -844 -7 -59 -7 -93 0 -106 36 -69 422 -256 673 -327 121 -34 132 -31 123 40 -3 29 -1 113 4 187 48 629 412 1016 1035 1098 44 6 141 15 215 21 396 32 569 111 738 340 57 76 142 229 142 255 0 22 -47 42 -166 69 -130 29 -227 66 -389 149 -238 121 -384 238 -455 365 -183 327 -216 359 -540 521 -297 149 -413 226 -543 358 -236 241 -359 558 -380 978 l-2 49 -80 -70z"/><path pathLength="1" d="M2705 6307 l-219 -213 27 -46 c37 -63 165 -197 232 -244 60 -41 74 -38 75 16 2 157 44 434 90 585 32 109 34 115 23 115 -5 0 -107 -96 -228 -213z"/><path pathLength="1" d="M710 4933 c-550 -589 -814 -1546 -669 -2423 71 -429 245 -762 547 -1051 448 -428 957 -554 1599 -394 76 19 166 43 201 54 34 10 62 15 62 11 0 -15 -94 -91 -162 -132 -229 -136 -471 -195 -761 -185 -290 10 -510 86 -723 248 -36 28 -67 49 -70 47 -12 -13 92 -147 190 -243 336 -333 798 -525 1259 -525 279 0 484 39 1017 193 247 72 345 89 523 95 102 3 180 0 220 -8 253 -49 475 -240 628 -538 28 -55 45 -79 49 -70 39 70 59 512 32 678 -95 574 -390 946 -918 1153 -153 60 -411 123 -669 162 -548 83 -904 186 -1280 370 -635 312 -1009 805 -1126 1486 -31 178 -34 542 -6 684 26 129 61 248 107 361 22 54 40 99 40 101 0 15 -30 -9 -90 -74z"/><path pathLength="1" d="M2862 3153 c-128 -188 -191 -393 -199 -649 -7 -213 -15 -200 157 -250 268 -78 594 -123 719 -98 41 9 39 13 -21 54 -79 53 -234 214 -310 320 -120 168 -205 350 -259 554 -15 60 -32 113 -38 119 -5 5 -24 -13 -49 -50z"/></g></svg>
+          <img src="assets/fox-mark.png" alt="" width="467" height="680" fetchpriority="high" draggable="false">
+        </div>
+      </div>
+    </div></div>
+    <p class="quip" id="quip" aria-live="polite"><span id="quipText">Poke the fox.</span></p>
+  </div>
+  <h1 aria-label="Busy Fox"><span class="w" aria-hidden="true"><i style="--d:0">Busy</i></span> <span class="w" aria-hidden="true"><i style="--d:1">Fox</i></span></h1>
+  <p class="tag" aria-label="Thinking Fast. Building Brands."><span class="w" aria-hidden="true"><i style="--d:3">Thinking</i></span> <span class="w" aria-hidden="true"><i style="--d:4">Fast.</i></span> <span class="w g" aria-hidden="true"><i style="--d:5">Building</i></span> <span class="w g" aria-hidden="true"><i style="--d:6">Brands.</i></span></p>
+  <p class="rot up" id="rot" style="--d:4" aria-label="Brands, ads, reels and websites"><b class="cur" aria-hidden="true">Brands</b><b aria-hidden="true">Ads</b><b aria-hidden="true">Reels</b><b aria-hidden="true">Websites</b></p>
+  <p class="lede up" style="--d:5">for businesses that want to be noticed.</p>
+  <div class="cta up" style="--d:6">
+    <a class="pill mag" href="mailto:admin@busyfox.in?subject=New%20project"><span>Start a project</span></a>
+    <a class="pill ghost mag" href="#services"><span>What we do<svg class="dn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></a>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <div data-rv>
+      <p class="eyebrow rv"><span class="num" data-n="1">01</span> What we do</p>
+      <h2 class="h2" data-split>A marketing agency <em>that also builds its own software.</em></h2>
+    </div>
+    <div class="svc" id="svc" data-rv>
+      <ol class="svc-list rv" id="svcList">
+        <li><a class="svc-row on" href="services.html#branding" data-i="0"><span class="n">01</span><span class="nm">Branding and design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="svc-row" href="services.html#social" data-i="1"><span class="n">02</span><span class="nm">Social media and ads</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="svc-row" href="services.html#video" data-i="2"><span class="n">03</span><span class="nm">Video and reels</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="svc-row" href="services.html#web" data-i="3"><span class="n">04</span><span class="nm">Websites and software</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      </ol>
+      <div class="svc-stage rv" aria-live="polite">
+        <div class="svc-pane on">
+          <div class="ill" aria-hidden="true"><div class="ib">
+            <i style="--k:0;--x:-70px;--y:-40px;--r:-80deg"></i><i style="--k:1;--x:10px;--y:-70px;--r:60deg"></i><i style="--k:2;--x:80px;--y:-30px;--r:120deg"></i>
+            <i style="--k:3;--x:-90px;--y:10px;--r:40deg"></i><i style="--k:4;--x:0px;--y:30px;--r:-160deg"></i><i style="--k:5;--x:90px;--y:20px;--r:-50deg"></i>
+            <i style="--k:6;--x:-60px;--y:70px;--r:100deg"></i><i style="--k:7;--x:20px;--y:80px;--r:-30deg"></i><i style="--k:8;--x:70px;--y:60px;--r:75deg"></i>
+          </div></div>
+          <ul><li style="--k:0">Logos</li><li style="--k:1">Brand kits</li><li style="--k:2">Posters</li><li style="--k:3">Menus</li><li style="--k:4">Brochures</li><li style="--k:5">Signboards</li></ul>
+          <a class="svc-go" href="services.html#branding">Open branding and design<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="svc-pane">
+          <div class="ill" aria-hidden="true"><div class="is"><i style="--k:0;--h:28%"></i><i style="--k:1;--h:42%"></i><i style="--k:2;--h:36%"></i><i style="--k:3;--h:58%"></i><i style="--k:4;--h:50%"></i><i style="--k:5;--h:74%"></i><i style="--k:6;--h:96%"></i></div></div>
+          <ul><li style="--k:0">Content calendars</li><li style="--k:1">Instagram, Facebook and LinkedIn publishing</li><li style="--k:2">Meta and Google ads</li><li style="--k:3">WhatsApp Business marketing</li><li style="--k:4">Monthly report</li></ul>
+          <a class="svc-go" href="services.html#social">Open social media and ads<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="svc-pane">
+          <div class="ill" aria-hidden="true"><div class="iv"><div class="iv-screen"><span class="iv-play"></span><span class="iv-bar"></span></div><div class="iv-tl"><i style="flex:3"></i><i style="flex:2"></i><i style="flex:4"></i><i style="flex:1.5"></i><i style="flex:2.5"></i><b class="iv-head"></b></div></div></div>
+          <ul><li style="--k:0">Reels</li><li style="--k:1">Ads</li><li style="--k:2">Launch films</li><li style="--k:3">Event and wedding films</li><li style="--k:4">Doctor videos</li></ul>
+          <a class="svc-go" href="services.html#video">Open video and reels<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="svc-pane">
+          <div class="ill" aria-hidden="true"><div class="iw"><div class="iw-top"><s></s><s></s><s></s><span class="iw-url">busyfox.in</span></div><div class="iw-body"><b style="--k:0"></b><div><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i></div></div></div></div>
+          <ul><li style="--k:0">Client websites</li><li style="--k:1">Business tools</li><li style="--k:2">Our own products</li></ul>
+          <a class="svc-go" href="services.html#web">Open websites and software<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec clients" id="clients">
+  <div class="wrap">
+    <div data-rv>
+      <p class="eyebrow rv"><span class="num" data-n="2">02</span> Who we work with</p>
+      <h2 class="h2" data-split>Seven kinds of business, <em>and what we make for them.</em></h2>
+    </div>
+    <ul class="wall" id="wall" data-rv>
+      <li class="rv wide"><div class="tile" data-c="0" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path class="i-roof" d="M6 17 24 7l18 10z"/><path class="i-col" style="--n:0" d="M12 21v15"/><path class="i-col" style="--n:1" d="M20 21v15"/><path class="i-col" style="--n:2" d="M28 21v15"/><path class="i-col" style="--n:3" d="M36 21v15"/><path d="M6 41h36M9 37h30"/></svg><h3>District administration</h3><p>Official social media channels, marketing strategy and production for public projects.</p><ul class="tl-tags"><li>Official social media</li><li>Marketing strategy</li><li>Production</li><li>Films and explainers</li></ul></div></li>
+      <li class="rv"><div class="tile" data-c="1" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 42V10h18v32M28 20h10v22M5 42h38"/><path class="i-win" style="--n:0" d="M15 16h2"/><path class="i-win" style="--n:1" d="M21 16h2"/><path class="i-win" style="--n:2" d="M15 23h2"/><path class="i-win" style="--n:3" d="M21 23h2"/><path class="i-win" style="--n:4" d="M15 30h2"/><path class="i-win" style="--n:5" d="M21 30h2"/><path class="i-win" style="--n:2" d="M32 27h2"/><path class="i-win" style="--n:4" d="M32 34h2"/></svg><h3>Real estate</h3><p>Everything a new venture needs, from the launch film to the back office.</p><ul class="tl-tags"><li>Website</li><li>Back-office dashboard</li><li>Reels</li><li>Posters</li><li>Brochures</li><li>Banners</li></ul></div></li>
+      <li class="rv"><div class="tile" data-c="2" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><g class="i-box" style="--n:2"><rect x="5" y="25" width="11" height="11" rx="1.5"/><path d="M10.5 25v4"/></g><g class="i-box" style="--n:1"><rect x="18.5" y="25" width="11" height="11" rx="1.5"/><path d="M24 25v4"/></g><g class="i-box" style="--n:0"><rect x="32" y="25" width="11" height="11" rx="1.5"/><path d="M37.5 25v4"/></g><g class="i-box" style="--n:1"><rect x="12" y="12" width="11" height="11" rx="1.5"/><path d="M17.5 12v4"/></g><path d="M4 41h40"/></svg><h3>Distribution</h3><p>A brand dealers recognise, and campaigns that move stock.</p><ul class="tl-tags"><li>Brand kit</li><li>Stationery</li><li>Dealer offers</li><li>Festive campaigns</li></ul></div></li>
+      <li class="rv"><div class="tile" data-c="3" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path class="i-pulse" d="M0 26h10l4-11 6 21 5-15 3 5h12l4-11 6 21 5-15 3 5h12l4-11 6 21 5-15 3 5h10"/></svg><h3>Healthcare</h3><p>Doctors on camera, in words patients understand.</p><ul class="tl-tags"><li>Doctor reels</li><li>Patient-education videos</li></ul></div></li>
+      <li class="rv"><div class="tile" data-c="4" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M9 21h24v9a10 10 0 0 1-10 10h-4A10 10 0 0 1 9 30zM33 24h3a4 4 0 0 1 0 8h-3.5M6 43h30"/><path class="i-steam" style="--n:0" d="M15 15c-2-2 2-4 0-7"/><path class="i-steam" style="--n:1" d="M21 15c-2-2 2-4 0-7"/><path class="i-steam" style="--n:2" d="M27 15c-2-2 2-4 0-7"/></svg><h3>Cafes and restaurants</h3><p>A look people remember, on the table and on the feed.</p><ul class="tl-tags"><li>Menus</li><li>Posters</li><li>Reels</li></ul></div></li>
+      <li class="rv"><div class="tile" data-c="5" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="30" rx="4"/><path d="M5 17h38M10 13h.01M14 13h.01"/><path class="i-bl" d="M19 23l-5 5 5 5"/><path class="i-br" d="M29 23l5 5-5 5"/><path d="M25.5 22l-3 12"/></svg><h3>Business software</h3><p>Material that helps a sales team explain the product.</p><ul class="tl-tags"><li>Sales deck</li><li>Posters</li><li>Marketing content</li><li>Product videos</li></ul></div></li>
+      <li class="rv"><div class="tile" data-c="6" tabindex="0"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><g class="i-gear"><circle cx="19" cy="21" r="12.5" stroke-width="4.5" stroke-dasharray="4.900 4.918" stroke-linecap="butt"/><circle cx="19" cy="21" r="10"/><circle cx="19" cy="21" r="3.5"/></g><g class="i-gear2"><circle cx="36" cy="35" r="7.5" stroke-width="3.5" stroke-dasharray="3.900 3.954" stroke-linecap="butt"/><circle cx="36" cy="35" r="5.5"/><circle cx="36" cy="35" r="1.5"/></g></svg><h3>Manufacturing</h3><p>Material that helps a sales team show what the factory makes.</p><ul class="tl-tags"><li>Sales deck</li><li>Posters</li><li>Marketing content</li><li>Catalogues</li><li>Product films</li></ul></div></li>
+    </ul>
+  </div>
+  <div class="mq" id="mq" aria-hidden="true">
+    <div class="mq-track" id="mqTrack"><span>District administration</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"><span>Real estate</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"><span>Distribution</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"><span>Healthcare</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"><span>Cafes and restaurants</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"><span>Business software</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"><span>Manufacturing</span><img src="assets/fox-mark.png" alt="" loading="lazy" draggable="false"></div>
+  </div>
+  <div class="wrap"><p class="mq-hint">Drag it. It also follows your scroll.</p></div>
+</section>
+
+<section class="sec fc" id="foxcut">
+  <div class="wrap">
+    <div class="fc-top" data-rv>
+      <div>
+        <p class="eyebrow rv" style="margin-bottom:22px"><span class="num" data-n="3">03</span> Our own product</p>
+        <div class="fc-id rv"><img src="assets/foxcut/icon.png" alt="" width="56" height="56" loading="lazy"><div><b>FoxCut</b><span>A Busy Fox product</span></div></div>
+        <h2 class="h2" data-split style="margin-top:22px">A video studio for Mac and Windows, <em>with an iPhone app on the way.</em></h2>
+      </div>
+      <div class="fc-copy rv">
+        <p>Type what you want to make, or drop in your footage. FoxCut cuts talking clips, reels and wedding films, and exports them sized for each platform.</p>
+        <a class="link" href="foxcut.html"><span class="ul">See FoxCut</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="toy" id="toy">
+      <div data-rv>
+        <p class="toy-label rv">Try the one bar. Tap a suggestion or type your own.</p>
+        <form class="bar rv" id="bar" autocomplete="off">
+          <span class="bar-plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          <input id="barIn" type="text" placeholder="What do you want to make?" aria-label="What do you want to make?" enterkeyhint="go" maxlength="90">
+          <button class="bar-go" type="submit">Make it</button>
+        </form>
+        <div class="chips rv" id="chips">
+          <button type="button" data-p="reel">30-second reel from today's cafe shoot</button>
+          <button type="button" data-p="captions">Captions in Telugu</button>
+          <button type="button" data-p="wedding">Wedding highlight, 1 minute</button>
+        </div>
+      </div>
+      <div class="toy-grid">
+        <div class="plan" data-rv>
+          <p class="plan-h rv">Plan <span>Demo</span></p>
+          <ol id="planList" aria-live="polite"><li class="hint" style="--k:0">Your plan shows up here, step by step.</li></ol>
+          <p class="plan-f">A demo of the idea, running in this page. Nothing is sent anywhere.</p>
+        </div>
+        <div>
+          <div class="tabs" role="tablist" aria-label="FoxCut screens">
+            <button role="tab" aria-selected="true" data-i="0">Home</button>
+            <button role="tab" aria-selected="false" data-i="1">Talking</button>
+            <button role="tab" aria-selected="false" data-i="2">Edit</button>
+            <button role="tab" aria-selected="false" data-i="3">Campaigns</button>
+          </div>
+          <div class="stage-slot" id="stageSlot">
+            <div class="stage" id="stage">
+              <img class="on" style="--fx:53%;--fy:46%" src="assets/foxcut/home-typed.webp" alt="FoxCut home screen with a typed request" width="2000" height="1250" loading="lazy" decoding="async">
+              <img style="--fx:54%;--fy:24%" src="assets/foxcut/talking.webp" alt="FoxCut talking clips screen" width="2000" height="1250" loading="lazy" decoding="async">
+              <img style="--fx:34%;--fy:21%" src="assets/foxcut/edit.webp" alt="FoxCut edit screen: talking clip, reel or wedding film" width="2000" height="1250" loading="lazy" decoding="async">
+              <img style="--fx:11%;--fy:3%" src="assets/foxcut/campaigns.webp" alt="FoxCut campaigns screen" width="2000" height="1250" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="capx" data-rv>
+      <div class="rv">
+        <h3>Captions with character.</h3>
+        <p>One sentence, five of FoxCut's caption styles. Tap the frame or pick a style.</p>
+        <div class="cap-btns" id="capBtns">
+          <button type="button" data-s="pop" aria-pressed="true">Bold Pop</button>
+          <button type="button" data-s="one" aria-pressed="false">One Word</button>
+          <button type="button" data-s="hook" aria-pressed="false">Hook Bar</button>
+          <button type="button" data-s="boxes" aria-pressed="false">Word Boxes</button>
+          <button type="button" data-s="note" aria-pressed="false">Marker Note</button>
+        </div>
+      </div>
+      <button type="button" class="cap rv" id="cap" data-s="pop" aria-label="Caption style preview. Press to switch style.">
+        <span class="cap-line" id="capLine"><span>Type</span><span>what</span><span>you</span><span>want</span><span>to</span><span>make.</span></span>
+        <span class="cap-name" id="capName">Bold Pop</span><span class="cap-tap">Tap to switch</span>
+      </button>
+    </div>
+
+    <div class="insights" data-rv>
+      <b class="rv">Busy Fox Insights</b>
+      <p class="rv">Busy Fox Insights is how we connect your Instagram, Facebook and LinkedIn accounts, publish what you approve and report back. Busy Fox operates it for you. <a class="tlink" href="insights.html">About Insights</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec how" id="how">
+  <div class="wrap">
+    <div data-rv>
+      <p class="eyebrow rv"><span class="num" data-n="4">04</span> How we work</p>
+      <h2 class="h2" data-split>Five steps, <em>start to finish.</em></h2>
+    </div>
+    <div class="stepper" id="stepper">
+      <div class="st-line" aria-hidden="true"><i id="stFill"></i></div>
+      <div class="runner" id="runner" aria-hidden="true"><img src="assets/fox-mark.png" alt="" loading="lazy"></div>
+      <ol class="steps" id="steps">
+        <li><span class="n">01</span><h3>We listen</h3><p>You tell us about the business and what you want people to notice.</p></li>
+        <li><span class="n">02</span><h3>You pick a direction</h3><p>We show options. You choose the one that feels right.</p></li>
+        <li><span class="n">03</span><h3>We make it</h3><p>Shooting, editing, design and build, done by our team.</p></li>
+        <li><span class="n">04</span><h3>You approve</h3><p>You approve each post before it goes out.</p></li>
+        <li><span class="n">05</span><h3>We post and learn</h3><p>We publish, read the results, and carry them into the next piece.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div data-rv>
+      <p class="eyebrow rv"><span class="num" data-n="5">05</span> Contact</p>
+      <h2 class="h2" data-split>Let's get you noticed.</h2>
+      <p class="greet rv" id="greet">Hello from Kadapa.</p>
+      <div class="cta rv">
+        <a class="pill mag" href="mailto:admin@busyfox.in?subject=New%20project"><span>Start a project<svg class="rt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+    <div class="cgrid" data-rv>
+      <button type="button" class="cg rv" id="mail" data-mail="admin@busyfox.in"><small>Email · tap to copy</small><strong><span class="ul">admin@busyfox.in</span><span class="copied" role="status">Copied</span></strong></button>
+      <div class="rv"><small>Based in</small><strong>Kadapa, Andhra Pradesh</strong></div>
+      <div class="rv"><small>Company</small><strong>Busyfox Marketing LLP</strong></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot" id="foot">
+  <div class="wrap">
+    <p>© 2026 Busyfox Marketing LLP · Kadapa, Andhra Pradesh · admin@busyfox.in</p>
+    <nav aria-label="Footer"><a href="company.html">Company</a><a href="foxcut.html">FoxCut</a><a href="insights.html">Insights</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="data-deletion.html">Data deletion</a><button type="button" id="motionBtn" aria-label="Toggle motion">Motion:<b id="motionState">on</b></button></nav>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

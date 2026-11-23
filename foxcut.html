@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FoxCut · A video studio from Busy Fox</title>
+<meta name="description" content="FoxCut is a video studio for Mac and Windows, with an iPhone app on the way. Type what you want to make, or drop in your footage. Early access.">
+<link rel="canonical" href="https://busyfox.in/foxcut.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Busy Fox">
+<meta property="og:title" content="FoxCut · A video studio from Busy Fox">
+<meta property="og:description" content="FoxCut is a video studio for Mac and Windows, with an iPhone app on the way. Type what you want to make, or drop in your footage. Early access.">
+<meta property="og:url" content="https://busyfox.in/foxcut.html">
+<meta property="og:image" content="https://busyfox.in/assets/fox300.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/fox300.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/geist-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/fox-mark.png">
+<script>
+(function(){
+  var r = document.documentElement, pref = null;
+  try { pref = localStorage.getItem('bf-motion'); } catch(e){}
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var still = pref ? pref === 'off' : reduce;
+  var sda = !still && window.CSS && CSS.supports && CSS.supports('animation-timeline: view()');
+  r.className = 'js' + (still ? ' still' : '') + (sda ? ' sda' : '');
+})();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="index.html#top" aria-label="Busy Fox, home">
+      <span class="brand-slot" id="markSlot"><img id="mark" src="assets/fox-mark.png" alt="" width="467" height="680"></span>
+      <span class="brand-word" id="brandWord">Busy Fox</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="services.html">Services</a><a href="index.html#clients">Who we work with</a><a href="foxcut.html" aria-current="page">FoxCut</a><a href="company.html">Company</a><a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="head-cta">
+      <a class="pill sm mag" href="mailto:admin@busyfox.in?subject=New%20project"><span>Start a project</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="prog" id="prog" aria-hidden="true"></div>
+</header>
+<nav class="sheet" id="sheet" aria-label="Menu">
+  <a href="services.html">Services</a><a href="index.html#clients">Who we work with</a><a href="foxcut.html" aria-current="page">FoxCut</a><a href="company.html">Company</a><a href="insights.html">Insights</a><a href="index.html#contact">Contact</a>
+</nav>
+<div class="cur" id="cur" aria-hidden="true"><i>Open</i></div>
+
+<main id="top">
+<section class="phero">
+  <div class="wrap" data-rv>
+    <div class="fc-id rv"><img src="assets/foxcut/icon.png" alt="" width="56" height="56"><div><b>FoxCut</b><span>A Busy Fox product</span></div></div>
+    <h1 class="h2" data-split>Type what you want. <em>FoxCut cuts it.</em></h1>
+    <p class="sub rv">A video studio for Mac and Windows, with an iPhone app on the way. Type a sentence or drop in your footage, and FoxCut cuts talking clips, short videos and wedding films, then exports them sized for each platform.</p>
+    <div class="cta rv"><a class="pill mag" href="mailto:admin@busyfox.in?subject=FoxCut%20early%20access"><span>Request early access<svg class="rt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="pill ghost mag" href="#toy"><span>Try the one bar</span></a></div>
+    <p class="note rv">Early access · macOS 13 or later on Apple silicon · Windows · iPhone app in development</p>
+  </div>
+</section>
+
+<section class="sec tight fc" style="margin-top:0">
+  <div class="wrap">
+    <div class="toy" id="toy" style="margin-top:0">
+      <div data-rv>
+        <p class="toy-label rv">Try the one bar. Tap a suggestion or type your own.</p>
+        <form class="bar rv" id="bar" autocomplete="off">
+          <span class="bar-plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          <input id="barIn" type="text" placeholder="What do you want to make?" aria-label="What do you want to make?" enterkeyhint="go" maxlength="90">
+          <button class="bar-go" type="submit">Make it</button>
+        </form>
+        <div class="chips rv" id="chips">
+          <button type="button" data-p="reel">30-second reel from today's cafe shoot</button>
+          <button type="button" data-p="captions">Captions in Telugu</button>
+          <button type="button" data-p="wedding">Wedding highlight, 1 minute</button>
+        </div>
+      </div>
+      <div class="toy-grid">
+        <div class="plan" data-rv>
+          <p class="plan-h rv">Plan <span>Demo</span></p>
+          <ol id="planList" aria-live="polite"><li class="hint" style="--k:0">Your plan shows up here, step by step.</li></ol>
+          <p class="plan-f">A demo of the idea, running in this page. Nothing is sent anywhere.</p>
+        </div>
+        <div>
+          <div class="tabs" role="tablist" aria-label="FoxCut screens">
+            <button role="tab" aria-selected="true" data-i="0">Home</button>
+            <button role="tab" aria-selected="false" data-i="1">Talking</button>
+            <button role="tab" aria-selected="false" data-i="2">Edit</button>
+            <button role="tab" aria-selected="false" data-i="3">Campaigns</button>
+          </div>
+          <div class="stage-slot" id="stageSlot">
+            <div class="stage" id="stage">
+              <img class="on" style="--fx:53%;--fy:46%" src="assets/foxcut/home-typed.webp" alt="FoxCut home screen with a typed request" width="2000" height="1250" loading="lazy" decoding="async">
+              <img style="--fx:54%;--fy:24%" src="assets/foxcut/talking.webp" alt="FoxCut talking clips screen" width="2000" height="1250" loading="lazy" decoding="async">
+              <img style="--fx:34%;--fy:21%" src="assets/foxcut/edit.webp" alt="FoxCut edit screen: talking clip, reel or wedding film" width="2000" height="1250" loading="lazy" decoding="async">
+              <img style="--fx:11%;--fy:3%" src="assets/foxcut/campaigns.webp" alt="FoxCut campaigns screen" width="2000" height="1250" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<section class="sec" id="talking">
+  <div class="wrap">
+    <div class="fx" data-rv>
+      <div class="rv">
+        <p class="eyebrow"><span class="num" data-n="1">01</span> Talking clips</p>
+        <h2 class="h3" style="margin-top:14px">A to-camera video in, a captioned clip out.</h2>
+        <p>Film upright or sideways, in English or Telugu. FoxCut listens, cuts the pauses and the fillers, and writes the captions.</p>
+        <ul class="ticks"><li>One clip, or several from one long video</li><li>Language detected for you, or pick English or Telugu</li><li>The speech model downloads once, the first time you use it</li></ul>
+      </div>
+      <div class="stage-slot rv"><div class="stage"><img class="on" style="--fx:54%;--fy:24%" src="assets/foxcut/talking.webp" alt="FoxCut talking clips screen with a drop area for your video" width="2000" height="1250" loading="lazy" decoding="async"></div></div>
+    </div>
+    <div class="capx" data-rv>
+      <div class="rv">
+        <h3>Captions with character.</h3>
+        <p>One sentence, five of FoxCut's caption styles. Tap the frame or pick a style.</p>
+        <div class="cap-btns" id="capBtns">
+          <button type="button" data-s="pop" aria-pressed="true">Bold Pop</button>
+          <button type="button" data-s="one" aria-pressed="false">One Word</button>
+          <button type="button" data-s="hook" aria-pressed="false">Hook Bar</button>
+          <button type="button" data-s="boxes" aria-pressed="false">Word Boxes</button>
+          <button type="button" data-s="note" aria-pressed="false">Marker Note</button>
+        </div>
+      </div>
+      <button type="button" class="cap rv" id="cap" data-s="pop" aria-label="Caption style preview. Press to switch style.">
+        <span class="cap-line" id="capLine"><span>Type</span><span>what</span><span>you</span><span>want</span><span>to</span><span>make.</span></span>
+        <span class="cap-name" id="capName">Bold Pop</span><span class="cap-tap">Tap to switch</span>
+      </button>
+    </div>
+
+    
+  </div>
+</section>
+
+<section class="sec band" id="edit">
+  <div class="wrap">
+    <div class="fx flip" data-rv>
+      <div class="rv">
+        <p class="eyebrow"><span class="num" data-n="2">02</span> Edit video</p>
+        <h2 class="h3" style="margin-top:14px">Footage in, a first cut out.</h2>
+        <p>Say what you are making: a talking clip, a short cut to music, or a wedding film. Drop the footage and FoxCut keeps the best moments.</p>
+        <ul class="ticks"><li>Cuts land on the beat of the music you choose</li><li>Transitions picked to suit the track, or set your own</li><li>Pick a length and get a first cut to refine</li></ul>
+      </div>
+      <div class="stage-slot rv"><div class="stage"><img class="on" style="--fx:34%;--fy:21%" src="assets/foxcut/edit.webp" alt="FoxCut edit screen: talking clip, short video or wedding film" width="2000" height="1250" loading="lazy" decoding="async"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="campaigns">
+  <div class="wrap">
+    <div class="fx" data-rv>
+      <div class="rv">
+        <p class="eyebrow"><span class="num" data-n="3">03</span> Campaigns, packs and approvals</p>
+        <h2 class="h3" style="margin-top:14px">One brief, every format.</h2>
+        <p>Start a campaign with a sentence, such as a festive offer or a product launch. FoxCut plans the pieces it needs and fills in the shared details once.</p>
+      </div>
+      <div class="stage-slot rv"><div class="stage"><img class="on" style="--fx:11%;--fy:3%" src="assets/foxcut/campaigns.webp" alt="FoxCut campaigns screen: start with a sentence" width="2000" height="1250" loading="lazy" decoding="async"></div></div>
+    </div>
+    <div class="cards" data-rv>
+      <div class="card rv"><b>Campaigns</b><p>A poster, a status and a short video from the same brief, so they match.</p></div>
+      <div class="card rv"><b>Packs</b><p>Ready-made looks you can add to a project, so every video keeps one style.</p></div>
+      <div class="card rv"><b>Approvals</b><p>Each piece waits for your yes. Nothing is exported as final before that.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="who">
+  <div class="wrap">
+    <div data-rv>
+      <p class="eyebrow rv"><span class="num" data-n="4">04</span> Who it is for</p>
+      <h2 class="h2" data-split>For people who film, <em>not people who edit.</em></h2>
+    </div>
+    <div class="cards" style="--cols:4" data-rv>
+      <div class="card rv"><b>Business owners</b><p>Offers, launches and updates, without learning an editor.</p></div>
+      <div class="card rv"><b>Doctors and clinics</b><p>Patient-education clips, captioned and tidy.</p></div>
+      <div class="card rv"><b>Creators</b><p>Long recordings turned into several short clips.</p></div>
+      <div class="card rv"><b>Wedding and event teams</b><p>A highlight film from a full day of footage.</p></div>
+    </div>
+    <div class="made rv in" style="margin-top:clamp(40px,6vw,80px)">
+      <div><b>Made by Busyfox Marketing LLP</b><p>FoxCut is built in Kadapa, Andhra Pradesh, by the same team that runs the Busy Fox agency. We built it for our own client work first. Questions go to admin@busyfox.in.</p></div>
+      <a class="pill mag" href="mailto:admin@busyfox.in?subject=FoxCut%20early%20access"><span>Request early access<svg class="rt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+    <p class="note">See how FoxCut handles data in the <a class="tlink" href="privacy.html#foxcut">privacy policy</a> and the <a class="tlink" href="terms.html#foxcut">terms</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot" id="foot">
+  <div class="wrap">
+    <p>© 2026 Busyfox Marketing LLP · Kadapa, Andhra Pradesh · admin@busyfox.in</p>
+    <nav aria-label="Footer"><a href="company.html">Company</a><a href="foxcut.html">FoxCut</a><a href="insights.html">Insights</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="data-deletion.html">Data deletion</a><button type="button" id="motionBtn" aria-label="Toggle motion">Motion:<b id="motionState">on</b></button></nav>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
